@@ -86,7 +86,7 @@ WHY: Avoid duplicating examples already embodied by the repository.
 ## Documentation
 
 This repository includes an associated
-[**documentation site**](https://denisecase.github.io/pro-analytics-02/).
+[**documentation site**](https://jugurthakacimi.github.io/pro-analytics-02/).
 
 - The site provides both a **reference** and a **worked example**
 - Source files live in the `docs/` directory
@@ -135,9 +135,9 @@ Use the instructions above to get it ALL set up correctly.
 Most people open a terminal on their machine (not VS Code), open in their Repos folder and run:
 
 ```shell
-git clone https://github.com/YOURACCOUNT/pro-analytics-02
+git clone https://github.com/jugurthakacimi/datafun-06-eda.git
 
-cd pro-analytics-02
+cd datafun-06-eda
 code .
 ```
 
@@ -191,7 +191,7 @@ git pull
 In the same VS Code terminal, run the files:
 
 ```shell
-uv run python src/pro_analytics_02/demo_module_basics.py
+uv run python src/datafun-06-eda/demo_module_basics.py
 ```
 
 Run checks and tests (as available):
@@ -230,6 +230,31 @@ This professional Python project uses:
 
 Alternative tools and stricter configurations are documented inline
 and may be enabled intentionally.
+
+## Dataset Description
+**Name:** Amazon_Sales_Dataset
+
+**Description:** This dataset contains Amazon-style e-commerce sales data created for data analysis, visualization, and machine learning. It captures realistic time-series sales patterns, pricing, discounts, customer regions, and ratings across multiple product categories.
+
+**Source:** https://www.kaggle.com/datasets/aliiihussain/amazon-sales-dataset?resource=download
+
+**Count of records:** 50000
+
+| Column | Dtype | Description |
+|---------|--------|-------------|
+| `order_id` | int64 | Unique identifier for each order. |
+| `order_date` | str | Date when the order was placed. |
+| `product_id` | int64 | Unique identifier for the product sold. |
+| `product_category` | str | Category the product belongs to. |
+| `price` | float64 | Original price of the product before discount. |
+| `discount_percent` | int64 | Discount applied to the product (percentage). |
+| `quantity_sold` | int64 | Number of units sold in the order. |
+| `customer_region` | str | Geographic region of the customer. |
+| `payment_method` | str | Payment method used (e.g., card, PayPal, etc.). |
+| `rating` | float64 | Average customer rating for the product. |
+| `review_count` | int64 | Number of customer reviews for the product. |
+| `discounted_price` | float64 | Final price after applying discount. |
+| `total_revenue` | float64 | Total revenue generated from the order (discounted price × quantity). |
 
 
 ## Annotations
